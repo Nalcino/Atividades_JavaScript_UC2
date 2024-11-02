@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 6</title>
+</head>
+
+<body>
+    <h1>Crie um programa que leia um número inteiro positivo e exiba todos os divisores desse número usando o loop
+        "while".</h1>
+    <script>
+        let num = (prompt("Digite um número:"));
+
+        if (num > 0) {
+            let i = 1;
+
+            while (i <= num) {
+                i++;
+                if (num % i == 0) {
+
+
+                    document.write(`${i}` + "<br/>");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
