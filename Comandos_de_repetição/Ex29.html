@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 29</title>
+  </head>
+  <body>
+    <h2>Escreva um programa que calcule o fatorial de um número inteiro inserido pelo usuário usando o loop "do-while".</h2>
+
+    <script>
+      let num = parseInt(prompt("Digite um número inteiro:"));
+      let fatorial = 1;
+      let i = num;
+
+      // Calculando o fatorial
+      if (num >= 0) {
+        do {
+          fatorial *= i;
+          i--;
+        } while (i > 0);
+        
+        document.write(`O fatorial de ${num} é: ${fatorial}`);
+      } else {
+        document.write("Por favor, insira um número inteiro positivo.");
+      }
+    </script>
+  </body>
+</html>

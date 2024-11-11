@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX30</title>
+  </head>
+  <body>
+    <h2>Crie um programa que leia o nome e a idade de várias pessoas usando o loop "do-while" até que o nome "fim" seja informado. Ao final, exiba a média das idades.</h2>
+    <script>
+      let soma = 0;
+      let contador = 0;
+      let nome = prompt("Insira seu nome ou 'fim' para encerrar.");
+
+      do {
+        soma += parseInt(prompt("Digite sua idade: "));
+        contador++;
+        nome = prompt("Insira seu nome ou 'fim' para encerrar.");
+      } while (nome.toUpperCase() !== "FIM");
+
+      document.write("A média das idades é: " + (soma / contador));
+    </script>
+  </body>
+</html>

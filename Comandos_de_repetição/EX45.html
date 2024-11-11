@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 45</title>
+  </head>
+  <body>
+    <h2>Crie um programa que leia o nome e a idade de várias pessoas até que o nome "fim" seja informado. Ao final, exiba a média das idades.</h2>
+
+    <script>
+      let soma = 0;
+      let contador = 0;
+      
+      for (let nome = prompt("Insira seu nome ou fim para encerrar."); nome.toUpperCase() != "FIM"; nome = prompt("Insira seu nome ou fim para encerrar.")) {
+        let idade = parseInt(prompt("Digite sua idade: "));
+        soma += idade;
+        contador++;
+      }
+
+      if (contador > 0) {
+        document.write("A média das idades é: " + (soma / contador));
+      } else {
+        document.write("Nenhuma idade foi registrada.");
+      }
+    </script>
+  </body>
+</html>

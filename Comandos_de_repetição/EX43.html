@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 43</title>
+  </head>
+  <body>
+    <h2>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente.</h2>
+
+    <script>
+      let numero = prompt("Digite um número inteiro:");
+      let numeroString = numero.toString();
+
+      document.write("Os dígitos do número são:<br/>");
+
+      for (let posicao = 0; posicao < numeroString.length; posicao++) {
+        document.write(numeroString[posicao] + "<br/>");
+      }
+    </script>
+  </body>
+</html>

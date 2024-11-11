@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 28</title>
+  </head>
+  <body>
+    <h2>Faça um programa que leia um número inteiro e exiba os seus dígitos separadamente usando o loop "do-while".</h2>
+
+    <script>
+      let numero = prompt("Digite um número inteiro:");
+
+      let numeroString = numero.toString();
+
+      let posicao = 0;
+
+      document.write("Os dígitos do número são:<br/>");
+
+      do {
+        document.write(numeroString[posicao] + "<br/>");
+        posicao++;
+      } while (posicao < numeroString.length);
+    </script>
+  </body>
+</html>

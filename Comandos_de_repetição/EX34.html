@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 34</title>
+  </head>
+  <body>
+    <h1>Faça um programa que leia 5 números inteiros e exiba a média aritmética dos valores lidos.    </h1>
+
+    <script>
+      let soma = 0;
+
+      for (let i = 1; i <= 5; i++) {
+        let num = (prompt("Escreva um número: "));
+        soma += num;
+      }
+
+      let media = soma / 5;
+      document.write("A média é: " + media);
+    </script>
+  </body>
+</html>

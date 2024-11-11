@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ex 37</title>
+  </head>
+  <body>
+    <h1>Verificar se um número é primo</h1>
+    <script>
+      let num = parseInt(prompt("Digite um número:"));
+      let primo = true;
+
+      for (let div = 2; div < num && primo; div++) {
+        primo = num % div !== 0;
+      }
+
+      document.write(primo && num > 1 ? num + " é um número primo." : num + " não é um número primo.");
+    </script>
+  </body>
+</html>
