@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX 21</title>
+  </head>
+  <body>
+    <h1>
+      A Loja Mamão com Açúcar está vendendo seus produtos em 5 (cinco)
+      prestações sem juros. Faça um programa que receba um valor de uma compra e
+      mostre o valor das prestações.
+    </h1>
+    <script>
+      let valorCompra =(prompt("Digite o valor da compra: "));
+
+      if (valorCompra > 0) {
+        let Vprestacao = valorCompra / 5;
+        document.write(`O valor de cada prestação é de: R$ ${Vprestacao}`);
+      } else if (valorCompra === 0) {
+        document.write("Digite um valor de compra válido.");
+      }
+    </script>
+  </body>
+</html>

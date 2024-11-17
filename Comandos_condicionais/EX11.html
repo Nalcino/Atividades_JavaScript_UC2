@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX 11</title>
+</head>
+
+<body>
+    <h1>
+        Escrever um programa que leia o nome de um vendedor, o seu salário fixo e
+        o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este
+        vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu
+        nome, o salário fixo e salário no final do mês.
+    </h1>
+    <script>
+        let nomeVendedor = prompt("Informe o seu nome:");
+        let salarioFixo = (prompt("Informe seu salário registrado em carteira: "));
+        let totalVendas = 
+        (prompt("Informe o valor total das suas vendas: "));
+
+        if (nomeVendedor == null && salarioFixo == null && totalVendas == null) {
+            document.write("Por favor passe as informações solicitadas");
+        } else {
+            let comissao = totalVendas * 0.15;
+
+            let salarioTotal = salarioFixo + comissao;
+
+            document.write(`Vendedor: ${nomeVendedor}<br>`);
+            document.write(`Salário Fixo: R$ ${salarioFixo}<br>`);
+            document.write(`Salário Total (com comissão): R$ ${salarioTotal}`);
+        }
+    </script>
+</body>
+
+</html>

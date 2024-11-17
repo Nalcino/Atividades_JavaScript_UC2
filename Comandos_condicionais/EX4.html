@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 4</title>
+</head>
+<body>
+    <h1>
+        - Dados três valores A, B e C, construa um programa em Javascript, que mostre na tela os valores de forma descendente (do maior para o menor).
+    </h1>
+
+    <script>
+        function Ordenados() {
+    let valor1 = parseFloat(prompt("Informe o valor de A:"));
+    let valor2 = parseFloat(prompt("Informe o valor de B:"));
+    let valor3 = parseFloat(prompt("Informe o valor de C:"));
+
+    let lista = [valor1, valor2, valor3];
+    lista.sort((x, y) => y - x);
+
+    alert("Os valores ordenados de forma decrescente são: " + lista.toString());
+}
+
+Ordenados();
+
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex 3</title>
+</head>
+<body>
+    <h1>
+        A CEF concederá um crédito especial com juros de 2% aos seus clientes de acordo com o saldo médio no último ano. Fazer um programa em JAVA que leia o saldo médio de um cliente e calcule o valor do crédito de acordo com a tabela a seguir. Imprimir uma mensagem informando o saldo médio e o valor de crédito.
+    </h1>
+
+    <script>
+        function calcularCredito() {
+    const sl1 = parseFloat(prompt("Entre com seu salário:"));
+    const sl2 = parseFloat(prompt("Entre com seu salário:"));
+    const sl3 = parseFloat(prompt("Entre com seu salário:"));
+    const sl4 = parseFloat(prompt("Entre com seu salário:"));
+    const sl5 = parseFloat(prompt("Entre com seu salário:"));
+    const sl6 = parseFloat(prompt("Entre com seu salário:"));
+
+    const media = (sl1 + sl2 + sl3 + sl4 + sl5 + sl6) / 6;
+
+    let credito;
+
+    if (media >= 0 && media <= 500) {
+        alert("Você não tem crédito");
+    } else if (media >= 501 && media <= 1000) {
+        credito = media * 0.30;
+        alert("O seu crédito é de: " + credito);
+    } else if (media >= 1001 && media <= 3000) {
+        credito = media * 0.40;
+        alert("O seu crédito é de: " + credito);
+    } else {
+        credito = media * 0.50;
+        alert("O seu crédito é de: " + credito);
+    }
+}
+
+// Chama a função
+calcularCredito();
+
+    </script>
+    
+</body>
+</html>

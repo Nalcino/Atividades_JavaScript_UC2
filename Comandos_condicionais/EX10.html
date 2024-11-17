@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX 10</title>
+  </head>
+  <body>
+    <h1>Informar um saldo e mostrar na tela o saldo com reajuste de 1.5%.</h1>
+    <script>
+      let salario = (prompt("Informe o seu salário"));
+
+      if (salario == null || salario == " ") {
+        document.write("Salário não informado");
+      }
+       else if (salario <= 0) {
+        document.write("Salário não pode ser 0");
+      } 
+      else {
+        let reajuste = salario * 1.5;
+        document.write(
+          `O seu salário R$ ${salario} ficou R$ ${reajuste} após o reajuste de 1.5`
+        );
+      }
+    </script>
+  </body>
+</html>

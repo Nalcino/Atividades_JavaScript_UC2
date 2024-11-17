@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EX 13</title>
+  </head>
+  <body>
+    <h1>
+      Ler uma temperatura em graus Celsius e apresentá-la convertida em graus
+      Fahrenheit. A fórmula de conversão é: F=(9*C+160) / 5, sendo F a
+      temperatura em Fahrenheit e C a temperatura em Celsius.
+    </h1>
+    <script>
+      let temperatura = (prompt("Digite uma tempertura habitual do Brasil: "));
+
+      if (temperatura >= 40) {
+        document.write("coloque entre 18º a 40º");
+      } else if (temperatura) {
+        let fah = (9 * temperatura + 160) / 5;
+        document.write(`A temperatura ${temperatura} digitada em graus Celsios em fahrenheit é ${fah}`);
+      }
+    </script>
+  </body>
+</html>
