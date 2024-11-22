@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 3 </title>
+</head>
+
+<body>
+<H1>
+    Crie um programa que leia 7 números inteiros e exiba a média aritmética dos valores lidos.
+</H1>
+
+    <script>
+        let numeros = [];
+        let soma = 0;
+
+        for (let i = 0; i < 7; i++) {
+            let numero = parseInt(prompt(`Digite o ${i + 1} número inteiro:`));
+            numeros.push(numero);
+            soma += numero;
+        }
+
+        let media = soma / numeros.length;
+
+        alert(`Os números digitados foram: ${numeros.join(", ")}`);
+        alert(`A média aritmética dos números é: ${media}`);
+
+    </script>
+</body>
+
+</html>

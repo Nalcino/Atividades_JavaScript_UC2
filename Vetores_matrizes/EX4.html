@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 4</title>
+</head>
+
+<body>
+    <h1>
+        Faça um programa que leia 5 números inteiros e exiba quantos deles são pares.
+    </h1>
+    <script>
+        let numeros = [];
+        let pares = 0;
+
+        for (let i = 0; i < 5; i++) {
+            let numero = parseInt(prompt(`Digite o ${i + 1} número inteiro:`));
+            numeros.push(numero);
+            if (numero % 2 === 0) {
+                pares++;
+            }
+        }
+
+        document.write(`Os números digitados foram: ${numeros.join(", ")}<br>`);
+        document.write(`Quantidade de números pares: ${pares}`);
+
+    </script>
+
+</body>
+
+</html>

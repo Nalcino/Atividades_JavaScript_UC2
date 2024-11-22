@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 14</title>
+</head>
+
+<body>
+    <h1>
+        Escreva um programa que leia 7 números inteiros e exiba apenas os números pares.
+    </h1>
+
+    <script>
+        let numeros = [];
+
+        for (let i = 0; i < 7; i++) {
+            let numero = parseInt(prompt(`Digite o ${i + 1} número inteiro:`));
+            numeros.push(numero);
+        }
+
+        let pares = numeros.filter(numero => numero % 2 === 0);
+
+        document.write(`Os números pares foram: ${pares.join(", ")}`);
+
+    </script>
+
+</body>
+
+</html>

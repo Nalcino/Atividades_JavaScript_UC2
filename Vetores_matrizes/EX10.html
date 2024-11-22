@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX 10</title>
+</head>
+
+<body>
+
+    <script>
+        let numeros = [];
+        let temZero = false;
+
+        for (let i = 0; i < 5; i++) {
+            let numero = parseInt(prompt(`Digite o ${i + 1} número inteiro:`));
+            numeros.push(numero);
+            if (numero === 0) {
+                temZero = true;
+            }
+        }
+
+        if (temZero) {
+            document.write(`Foi digitadoum número igual a zero.`);
+        } else {
+            document.write(`Nenhum número digitado é igual a zero.`);
+        }
+
+    </script>
+</body>
+
+</html>
